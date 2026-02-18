@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <meta charset="UTF-8"/>
+    <title>Cadastro de Faculdade</title>
+    <h:outputStylesheet library="css" name="arquivo.css" />
+</h:head>
+<h:body class="corpo">
+   
+    <H1>Cadastro Faculdade</H1>
+  
+    <h:form>
+        <p class="rotulo">Código:
+            <h:inputText value="#{faculdadeMB.codigo}" class="entrada" />
+        </p>
+        <p class="rotulo">Nome completo:
+            <h:inputText value="#{faculdadeMB.nomeC}" class="entrada" />
+        </p>
+        <p class="rotulo">Nome fantasia:
+            <h:inputText value="#{faculdadeMB.nomeF}" class="entrada" />
+        </p>
+        <p class="botao">
+            <h:commandButton value="Salvar" action="faculdades" />
+        </p>
+    </h:form>
+    <p id="resultado">Faculdade cadastrada: <br/>
+        Código: "#{faculdadeMB.codigo}"<br/>
+        Nome: "#{faculdadeMB.nomeC}"<br/>
+        Nome fantasia: "#{faculdadeMB.nomeF}"<br/>
+    </p>
+</h:body>
+</html>
