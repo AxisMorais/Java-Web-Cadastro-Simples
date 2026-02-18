@@ -1,4 +1,4 @@
-#Projeto Cadastro Simples Java Web
+##Projeto Cadastro Simples Java Web
 
 Para o funcionamento é necessário:
 • Java versão 1.8
